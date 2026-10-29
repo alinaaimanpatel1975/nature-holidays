@@ -1,0 +1,198 @@
+.popular-tours {
+  padding: 56px 24px 64px;
+  background: var(--sage);
+}
+
+.popular-tours-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.popular-tours-heading {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.popular-tours-eyebrow {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.popular-tours-heading h2 {
+  margin-top: 12px;
+  color: var(--forest);
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.popular-tours-heading > p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.popular-tour-row {
+  min-width: 0;
+}
+
+.popular-tour-row + .popular-tour-row {
+  margin-top: 22px;
+}
+
+.popular-tour-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Names remain accessible without hovering over photos. */
+
+.popular-tour-names {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 12px;
+}
+
+.popular-tour-names button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 40px;
+  padding: 9px 15px;
+  border: 1px solid #173d3530;
+  border-radius: 999px;
+  color: var(--forest);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.popular-tour-names button:hover {
+  color: var(--white);
+  background: var(--forest);
+  border-color: var(--forest);
+}
+
+.popular-tour-names button > span {
+  font-size: 16px;
+}
+
+/* TOUR INFORMATION */
+
+.popular-tour-dialog {
+  width: min(500px, calc(100% - 32px));
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  background: var(--ivory);
+}
+
+.popular-tour-dialog::backdrop {
+  background: rgba(7, 27, 21, 0.7);
+}
+
+.popular-tour-dialog-content {
+  padding: 28px;
+}
+
+.popular-tour-dialog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.popular-tour-close {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--forest);
+  background: transparent;
+  font-size: 25px;
+}
+
+.popular-tour-dialog-content h2 {
+  margin-top: 20px;
+  color: var(--forest);
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+}
+
+.popular-tour-state {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.popular-tour-highlight {
+  margin-top: 24px;
+  color: var(--forest);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.popular-tour-description {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.popular-tour-development-note {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .popular-tours {
+    padding: 40px 20px 48px;
+  }
+
+  .popular-tours-heading h2 {
+    font-size: 29px;
+  }
+
+  .popular-tours-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .popular-tour-names {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .popular-tour-names button {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .popular-tour-dialog-content {
+    padding: 22px;
+  }
+}
